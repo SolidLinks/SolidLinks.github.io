@@ -50,7 +50,8 @@
 		color: white;
 		padding-top: 2em;
 		animation-name: logoFadeIn;
-		animation-duration: 5s; 
+		animation-duration: 5s;
+		animation-fill-mode : forwards
 		opacity: 0;
 	}
 
@@ -74,11 +75,15 @@
 	@media only screen and (max-width: 600px) {
 	    .header {
 			text-align: center;
-			font-size: 45px;
+			font-size: 30px;
 			font-weight: 300;
 			letter-spacing: 15px;
 			color: white;
 			padding-top: 4em;
+			animation-name: logoFadeIn;
+			animation-duration: 5s;
+			animation-fill-mode : forwards
+			opacity: 0;
 		}
 		.prev-img {
 			margin-top: 5px;
