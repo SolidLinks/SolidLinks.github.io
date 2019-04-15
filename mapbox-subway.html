@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset='utf-8' />
-  <title>Display a map</title>
-  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
-  <style>
-    body { margin:0; padding:0; }
-    #map { position:absolute; top:0; bottom:0; width:100%; }
-  </style>
+    <meta charset='utf-8' />
+    <title>Add a geocoder</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
 </head>
 <body>
 
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.min.js'></script>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.css' type='text/css' />
 <div id='map'></div>
+
 <script>
 mapboxgl.accessToken = 'pk.eyJ1Ijoic29saWRsaW5rIiwiYSI6ImNqbGcwN3c0bjBma3QzcXV4NjRsdGF5bDkifQ.etyNOdsN1WG-sKH74oQkXQ';
-const map = new mapboxgl.Map({
-  container: 'map',
-  style: 'mapbox://styles/solidlink/cjuihlkfp3a181frvytjpgv23',
-  center: [-79.385822, 43.670754],
-  zoom: 17.5
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/solidlink/cjuihlkfp3a181frvytjpgv23',
+    center: [-79.4512, 43.6568],
+    zoom: 13
 });
+
+map.addControl(new MapboxGeocoder({
+    accessToken: mapboxgl.accessToken,
+    mapboxgl: mapboxgl
+}));
 </script>
 
 </body>
