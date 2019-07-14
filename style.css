@@ -366,23 +366,23 @@ p {
 
 @media screen and (max-width: 1150px) {
   .project-image {
-    height: 230vh;
+    height: 130vh;
   }
 }
 
 @media screen and (max-width: 735px) {
   .project-image {
-    height: 230vh;
+    height: 130vh;
   }
 }
 
 @media screen and (max-width: 514px) {
   .about-image {
-    height: 265vh;
+    height: 295vh;
   }
 
   .project-image {
-    height: 220vh;
+    height: 170vh;
   }
 }
 
