@@ -378,11 +378,11 @@ p {
 
 @media screen and (max-width: 514px) {
   .about-image {
-    height: 365vh;
+    height: 265vh;
   }
 
   .project-image {
-    height: 420vh;
+    height: 220vh;
   }
 }
 
