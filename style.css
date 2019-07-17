@@ -546,6 +546,9 @@ footer a:active {
 .btn {
   transition: 0.3s;
   background-color: #d60d56;
+  background-image: linear-gradient(rgb(192, 50, 85), rgb(77, 70, 147));
+  background-size: auto 200%;
+  background-position: 0 40%;
   border: none;
   border-radius: 30px;
   padding: 11px;
@@ -557,10 +560,12 @@ footer a:active {
 
 .btn:hover {
   background-color: #f20f5b;
+  background-position: 0 0;
 }
 
 .btn:active {
   background-color: #d10d4e;
+  background-position: 0 100%;
 }
 
 .btn:focus {
