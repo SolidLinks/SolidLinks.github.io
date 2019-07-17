@@ -127,7 +127,7 @@ nav {
 /* Main */
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(https://images.unsplash.com/photo-1546640646-89b557854b23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
   background-size: cover;
   background-position: center bottom;
@@ -284,30 +284,12 @@ p {
   transform: scale(0.9);
 }
 
-@media screen and (max-width: 820px) {
-  .social-links {
-    flex-direction: column;
-  }
-
-  .skill-wrapper {
-    flex-direction: column;
-  }
-
-  .social-box {
-    padding: 20px;
-    margin: 15px 2px;
-  }
-
-  .about-image {
-    height: 350vh;
-  }
-}
 
 /* PROJECTS */
 
 .project-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(https://images.unsplash.com/photo-1476231682828-37e571bc172f?ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://images.unsplash.com/photo-1555448202-a1eecad3ec51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -354,7 +336,8 @@ p {
 
 .project-tile:hover {
   transform: scale(1.06);
-  background-color: #108510;
+  /* background-color: #108510; */
+  background-color: #c90a2a;
 }
 
 .project-tile:hover p {
@@ -379,16 +362,37 @@ p {
   text-align: left;
 }
 
-/* Media Query */
-@media screen and (max-width: 1150px) {
+/* SCREEN SIZES */
+@media screen and (max-width: 954px) {
   .project-image {
-    height: 120vh;
+    height: 170vh;
   }
 }
 
-@media screen and (max-width: 975px) {
-  .project-image {
-    height: 170vh;
+@media screen and (max-width: 820px) {
+  .social-links {
+    /* flex-direction: column; */
+    flex-direction: row;
+  }
+
+  .skill-wrapper {
+    /* flex-direction: column; */
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .skill-box {
+    width: 30%;
+  }
+
+  .social-box {
+    padding: 20px;
+    margin: 15px 2px;
+    width: 100;
+  }
+
+  .about-image {
+    height: 350vh;
   }
 }
 
@@ -405,16 +409,15 @@ p {
 
 @media screen and (max-width: 514px) {
   .about-image {
-    height: 305vh;
+    height: 170vh;
   }
 
   .project-image {
-    height: 300vh;
+    height: 265vh;
   }
 }
 
 /* CONTACT */
-
 .contact-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=793&q=80);
@@ -609,7 +612,7 @@ footer a:active {
 
 .btn-inline {
   transition: 0.3s ease-out;
-  background-color: #10a420;
+  background-color: #cc0a3b;
   border: none;
   border-radius: 5px;
   padding: 4px;
