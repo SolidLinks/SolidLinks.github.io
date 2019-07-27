@@ -108,6 +108,16 @@ body {
   color: greenyellow;
 }
 
+.old-site {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+
+.old-site:hover {
+  color: greenyellow;
+}
+
 .card:hover>.front {
   transform: perspective(600px) rotateY(-180deg)
 }
