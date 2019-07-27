@@ -25,6 +25,7 @@ body {
 
 .card {
   cursor: pointer;
+  background: transparent;
   width: 340px;
   height: 480px;
   margin: 8% auto 8% auto;
@@ -119,9 +120,11 @@ body {
 }
 
 .card:hover>.front {
+  transition: transform 1s ease-out;
   transform: perspective(600px) rotateY(-180deg)
 }
 
 .card:hover>.back {
+  transition: transform 1s ease-out;
   transform: perspective(600px) rotateY(0deg)
 }
