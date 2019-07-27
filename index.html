@@ -5,236 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./style.css">
-  <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/3453b874c7.js"></script>
   <title>SOLIDLINKS</title>
 </head>
 
 <body>
-  <nav id="navbar">
-    <div class="logo">
-      <a href="#">
-        <h4><i class="fas fa-cubes"></i> SOLIDLINKS</h4>
-      </a>
+  <div class="card">
+    <div class="front">
+      <div class="container">
+        <h1><i class="fas fa-cubes"></i> SOLIDLINKS</h1>
+        <h3>Website under construction...</h3>
+      </div>
+
     </div>
-    <ul class="nav-links">
-      <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-      <li><a href="#about"><i class="fas fa-question-circle"></i> About</a></li>
-      <li><a href="#projects"><i class="fas fa-tools"></i> Projects</a></li>
-      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-    </ul>
-    <div class="burger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
+    <div class="back">
+      <div class="container">
+        <h1>Aryan</h1>
+        <h5>const title = "Software Developer";</h5>
+        <ul>
+          <a class="sociak-links" href="https://github.com/SolidLinks">
+            <li><i class="fab fa-github"></i></li>
+          </a>
+          <a class="sociak-links" href="https://github.com/SolidLinks">
+            <li><i class="fas fa-file-pdf"></i></li>
+          </a>
+          <a class="sociak-links" href="https://github.com/SolidLinks">
+            <li><i class="fab fa-linkedin"></i></li>
+          </a>
+        </ul>
+        <a class="contact" href="mailto:aryan.motiondash@gmail.com">
+          <h4>Contact Me</h4>
+        </a>
+      </div>
+
     </div>
-  </nav>
-
-  <main>
-    <!--  HERO    -->
-    <section id="welcome-section">
-      <div class="hero-image">
-        <div class="hero-text">
-          <h1>SOLIDLINKS</h1>
-          <p>software developer</p>
-          <a href="#about"><button class="btn"><i class="fas fa-rocket"></i> Learn More</button></a>
-        </div>
-      </div>
-    </section>
-
-    <!--  ABOUT    -->
-    <section id="about">
-      <div class="about-image">
-        <div class="about-text">
-          <img class="lazy" data-src="https://avatars3.githubusercontent.com/u/40644553?s=460&v=4" alt="">
-          <h1 class="lazy center-text">About Me</h1>
-          <p class="lazy">Fast learner and always into latest technologies. I strive to make my work the best it can be,
-            and improve
-            upon my work to make it efficient. I'm creative and innovative and have experience with languages that are
-            on demand in the industry.</p>
-
-          <div class="lazy skill-wrapper">
-            <div class="skill-box">
-              <h4><i class="fab fa-html5"></i></h4>
-              <h4>HTML5</h4>
-            </div>
-            <div class="skill-box">
-              <h4><i class="fab fa-css3-alt"></i></h4>
-              <h4>CSS3</h4>
-            </div>
-            <div class="skill-box">
-              <h4><i class="fab fa-js-square"></i></h4>
-              <h4>JS</h4>
-            </div>
-            <div class="skill-box">
-              <h4><i class="fab fa-bootstrap"></i></h4>
-              <h4>Bootstrap</h4>
-            </div>
-            <div class="skill-box">
-              <h4><i>jQ</i></h4>
-              <h4>jQuery</h4>
-            </div>
-            <div class="skill-box">
-              <h4><i class="fab fa-react"></i></h4>
-              <h4>React</h4>
-            </div>
-            <div class="skill-box">
-              <h4><i class="fab fa-git-alt"></i></h4>
-              <h4>Git</h4>
-            </div>
-          </div>
-
-          <div class="lazy social-wrapper">
-            <div class="social-links">
-
-              <a id="profile-link" href="https://github.com/SolidLinks" target="_blank">
-                <div class="social-box">
-                  <h2><i class="fab fa-github"></i></h2>
-                  <h2>GitHub</h2>
-                </div>
-              </a>
-
-              <a href="#">
-                <div class="social-box">
-                  <h2><i class="fas fa-file-pdf"></i></h2>
-                  <h2>Résumé</h2>
-                </div>
-              </a>
-
-              <a href="https://codepen.io/SolidLinks/" target="_blank">
-                <div class="social-box">
-                  <h2><i class="fab fa-linkedin"></i></h2>
-                  <h2>LinkedIn</h2>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--  PROJECTS    -->
-    <section id="projects">
-      <div class="project-image">
-        <div class="project-text">
-          <h1 class="lazy project-text">Projects</h1>
-          <p class="lazy project-text">Some of my projects that I've worked on.</p>
-        </div>
-        <div class="lazy project-wrapper">
-
-          <div class="project-tile">
-            <img src="https://solidlinks.github.io/public/images/TuberLogo.png" alt="">
-            <h2>TUBER</h2>
-            <p>
-              An app that lets you find handpicked Tutors in Toronto! Choose from a list of tutors, find the location
-              and directions automatically! Tutors can sign up for a Tutor account and manage from a list of students!
-            </p>
-            <div class="project-buttons">
-              <a target="_blank" href=""><button class="btn-inline" disabled><i class="fas fa-bolt"></i>
-                  Live</button></a>
-              <a target="_blank" href=""><button class="btn-inline" disabled><i class="fab fa-github"></i>
-                  Source</button></a>
-            </div>
-
-          </div>
-
-          <div class="project-tile">
-            <img src="https://i.imgur.com/7zqciis.png" alt="">
-            <h2>FRONTEX</h2>
-            <p>A fictional startup landing page that specializes in space exploration. Fully responsive and made with CSS Flexbox.
-            </p>
-            <div class="project-buttons">
-              <a target="_blank" href="https://frontex.netlify.com/"><button class="btn-inline"><i
-                    class="fas fa-bolt"></i>
-                  Live</button></a>
-              <a target="_blank" href="https://github.com/SolidLinks/frontex"><button class="btn-inline"><i
-                    class="fab fa-github"></i> Source</button></a>
-            </div>
-          </div>
-
-          <div class="project-tile">
-            <img src="https://media.discordapp.net/attachments/583850361773621269/599977649477255176/unknown.png"
-              alt="">
-            <h2>Gradient Generator</h2>
-            <p>
-              A simple gradient generator made in HTML5/CSS3 and Javascript. use the color picker to generate a new
-              background and copy paste it on your code!
-            </p>
-            <div class="project-buttons">
-              <a target="_blank" href="https://solidlink-gradientgen.netlify.com/"><button class="btn-inline"><i
-                    class="fas fa-bolt"></i> Live</button></a>
-              <a target="_blank" href="https://github.com/SolidLinks/CSS-gradient-generator"><button
-                  class="btn-inline"><i class="fab fa-github"></i> Source</button></a>
-            </div>
-          </div>
-
-          <div class="project-tile">
-            <img src="https://i.imgur.com/1mN3ezF.png" alt="">
-            <h2>UserFindr</h2>
-            <p>
-              UserFindr is a simple app made with React that allows you to find a list of people that gets fetched
-              online.
-            </p>
-            <div class="project-buttons">
-              <a target="_blank" href="http://userfindr.herokuapp.com"><button class="btn-inline"><i
-                    class="fas fa-bolt"></i> Live</button></a>
-              <a target="_blank" href="https://github.com/SolidLinks/UserFindr"><button class="btn-inline"><i
-                    class="fab fa-github"></i> Source</button></a>
-            </div>
-          </div>
-
-          <!-- <div class="project-tile">
-            <img src="https://solidlinks.github.io/public/images/TuberLogo.png" alt="">
-            <h2>Project</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.
-            </p>
-            <div class="project-buttons">
-              <a target="_blank" href=""><button class="btn-inline"><i class="fas fa-bolt"></i> Live</button></a>
-              <a target="_blank" href=""><button class="btn-inline"><i class="fab fa-github"></i> Source</button></a>
-            </div>
-          </div> -->
-
-        </div>
-      </div>
-    </section>
-
-    <!--  CONTACT    -->
-    <section id="contact">
-      <div class="contact-image">
-        <div class="contact-text">
-          <h1 class="lazy">Let's work together...</h1>
-          <p class="lazy">Send me a message! Let's start talking!</p>
-
-          <form class="lazy" method="POST" action="https://formspree.io/aryan.motiondash@gmail.com">
-            <label for="name">Full Name: </label>
-            <input type="text" name="name" placeholder="Name" required>
-            <label for="email address">Email Address: </label>
-            <input type="email" name="email" placeholder="Email Address" required>
-            <label for="message">Message: </label>
-            <textarea name="message" placeholder="Message" required></textarea>
-            <button class="btn" type="submit"><i class="fas fa-envelope"></i> Send</button>
-          </form>
-
-
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <h4>SOLIDLINKS portfolio made by Solid. Copyright 2019</h4>
-    <h5>Made with HTML5/CSS3 and Javascript</h5>
-    <ul class="footer-links">
-      <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-      <li><a href="#about"><i class="fas fa-question-circle"></i> About</a></li>
-      <li><a href="#projects"><i class="fas fa-tools"></i> Projects</a></li>
-      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-    </ul>
-  </footer>
-
-  <script src="./script.js"></script>
-  <script src="https://kit.fontawesome.com/3453b874c7.js"></script>
+  </div>
 </body>
 
 </html>
